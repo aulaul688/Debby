@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(245, 245, 210);
+}
+.navbar{
+    background-color: rgb(241, 220, 157);
+    height: 20%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    float: left;
+}
+.navbar li{
+    display: block;
+    float: left;
+    list-style: none;
+    padding: 10px 15px;
+}
+.navbar a{
+    text-decoration: none;
+    color: #333206;  
+}
+.navbar li:hover{
+    background-color: #f7b715;
+}

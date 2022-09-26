@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(245, 245, 210);
+    margin-left: 0;
+}
+.block{
+    display: flex;
+    background-color: aliceblue;
+    width: 1300px;
+    height: 500px;
+    margin-top: 125px;
+    margin-left: 100px;
+    box-shadow: 0 0 20px 5px rgb(159, 170, 130);/*直 橫 模糊度 擴散度 顏色*/
+}
+
+.block img{
+    display: block;
+    float: left;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 50px;
+    box-shadow: 10px 10px 20px 2px gray;/*直 橫 模糊度 擴散度 顏色*/
+    border-radius: 20px 20px 20px 20px;/*左上 右上 右下 左下*/
+}
+
+.block h1{
+        display: inline;
+        font-size: 100px;
+        margin-left: 100px;
+        margin-top: 50px;
+}
+button{
+    display: inline;
+    margin: 15px;
+    padding: 10px;
+    height: 100px;
+    background-color: rgb(250, 216, 155);
+    border: 0;
+    border-radius: 50px;
+    font-size: 50px;
+    color: rgb(70, 57, 12);
+}
+button:hover{
+    background-color: rgb(251, 251, 155);
+}
+#pro{
+    margin-left: 150px;
+    margin-top: 200px;
+}
+a{
+    text-decoration: none;
+    padding: 20px;
+}
+a:visited{
+    color: rgb(70, 57, 12);
+}

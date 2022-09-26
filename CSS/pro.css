@@ -1,0 +1,157 @@
+body{
+    background-color: rgb(245, 245, 210);
+    margin-left:0; ;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+p{
+    margin: 0;
+}
+h2{
+    margin: 0;
+}
+ul{/*去除縮排那些*/
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #333206;
+}
+.navbar{/*黃底導航欄*/
+    display: block;
+    float: left;
+    position: absolute;
+    top: 0;
+    width: 1520px;
+    height: 50px;
+    background-color: rgb(241, 220, 157);
+    z-index: 9999;
+}
+.navbar li{/*所有選單*/
+    display: flexbox;
+    list-style:none;
+    background-color: rgb(241, 220, 157);
+    text-align: center;
+}
+.navbar>li{/*第一層靠左*/
+    float: left;
+    padding: 0px;
+    margin: 7px;
+}
+
+.navbar a{
+    font-size: 30px;
+    padding: 10px 6px;
+    text-decoration: none;
+    color:#333206;     
+}
+
+.navbar li ul{
+    display: none;/*先隱藏*/
+    margin-top: 6px;/*次選單與主選單距離*/
+    overflow: hidden;
+}
+
+.navbar li ul li{
+    padding: 2px 0px;
+}
+.navbar li ul a{/*次選單超連結*/
+    padding: 8px 25px;
+   
+}
+.navbar li a:hover {
+    background-color:  #f7b715;
+}
+/*滑過第一層時顯示*/
+.navbar>li:hover ul{
+    display: block;
+}
+
+/*滑到次選單主選單依然變色*/
+.navbar li:hover>a{/*滑過li時 底下的第一個a(第一層)*/
+    background-color:  #f7b715;
+}
+/*left side*/
+.left{
+    display: inline-block;
+    position: fixed;
+    left: 10vw;
+    top: 5vw;
+    width: 10vw;
+    height: 300px;
+}
+/*contact*/
+.middle{
+    display: inline-block;
+    justify-content: center;
+    margin: 0 20vw;
+    width: 60vw;
+    height: 100%;
+    
+}
+.middle a{/*將div變超連結*/
+    color: #333206;
+    background-color:  white;
+    text-decoration: none;
+    display: block;
+    width: 30vw;
+    margin: 5vw 12vw;
+    padding:3vw 3vw;
+    text-align: center;
+    justify-content: center;
+    border-radius: 2vw;
+}
+
+.middle a:hover{
+    color: white;
+    background-color: #333206;
+}
+.middle a:active{
+    color: white;
+    background-color: #333206;
+}
+/*right side*/
+.right{
+    display: inline-block;
+    position: absolute;
+    top: 10vw;
+    right: 5vw;
+    width: 10vw;
+    height: 300px;
+    background-color: white;
+}
+
+/*footer*/
+.footer{
+    position: fixed;
+    bottom: 0px;
+    width: 1520px;
+    height: 80px;
+    background-color: rgb(241, 220, 157);
+}
+.footer p{
+    font-size: 1.5vw;
+    float: left;
+}
+#c{
+    display: block;
+    width: 50vw;
+    float: left;
+}
+#c p{
+    padding-left: 2vw;
+}
+
+#contact{
+    display:block;
+    width: 40vw;
+    float: left;
+}
+#contact p{
+    display: inline-block;
+    margin-left: 3vw;
+}
+#contact img{
+    width: 3vw;
+}
