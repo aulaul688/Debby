@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #F1DC9D;
+    height: 50px;
+    white-space:nowrap;
+}
+
+.navbar li{
+    display: flexbox;
+    list-style: none;
+    background-color: #F1DC9D;
+    
+}
+
+.navbar >li{
+    float: left;
+    padding: 7px;
+    margin: 0px;
+}
+
+.navbar a{
+    font-size: 30px;
+    color: #333206;
+    text-decoration: none;
+    padding: 10px 6px;
+}
+.subnav{
+    display: none;
+    margin-top: 7px;
+    overflow: hidden;
+    position: absolute;/*別跑版*/
+}
+
+.subnav li{
+    padding: 2px 0px;
+}
+.subnav a{
+    padding: 6px 25px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color:  #f7b715;
+}
+.navbar >li:hover ul{
+    display: block;
+}
+
+.navbar li:hover>a{
+    background-color:  #f7b715;
+}

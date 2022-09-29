@@ -4,74 +4,10 @@ body{
     overflow-x: scroll;
     overflow-y: scroll;
 }
-ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
+
 a{
     text-decoration: none;
 }
-/*navbar*/
-.navbar{ /*div*/
-    display: block;
-    width: 1520px;
-    height: 50px;
-    background-color: rgb(241, 220, 157);
-    margin: 0;
-    float: left;
-    position: absolute;
-    top: 0;
-}
-
-.navbar li{
-    display: flexbox;
-    background-color: rgb(241, 220, 157);
-    z-index: 998;
-}
-
-.navbar>li{
-    float: left;
-    padding: 0px;
-    margin: 7px;
-}
-
-.navbar a{
-    font-size: 30px;
-    padding: 10px 6px;
-    color:#333206; 
-}
-
-.navbar li ul{
-    display: none;
-    overflow: hidden;
-    margin-top: 6px;
-}
-
-.navbar li ul a{
-    display: block;
-    padding: 8px 0px;
-    margin-top: 3px;
-    font-size: 25px;
-}
-
-.navbar a:hover{
-    background-color:  #f7b715;
-}
-
-.navbar>li:hover ul{
-    display: block;
-}
-
-.navbar li ul li{
-    padding: 2px 0px;
-}
-
-
-.navbar li:hover>a{
-    background-color:  #f7b715;
-}
-
 
 /*left button*/
 .left{
