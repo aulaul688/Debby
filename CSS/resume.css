@@ -1,80 +1,82 @@
-body{
-    background-color: rgb(245, 245, 210);
-    margin: 0;
-    overflow-x: scroll;
-    overflow-y: scroll;
+.main{
+    position: relative;
+    width: 100%;
+    height: 83%;
+    margin-top: 7%;
 }
-
-a{
-    text-decoration: none;
+h2{
+    margin-left: 2%;
+    font-size: 2vw;
 }
-
-/*left button*/
 .left{
     position: fixed;
-    top: 100px;
-    left: 5vw;
-    width: 50px;
+    width: 10%;
 }
-
 .left button{
-    background-color: #BEDBB2;
-    width: 50px;
-    border: 0;
-    margin: 7px;
-    border-radius: 7px;
-    box-shadow:  0 0 5px 1px #71816a;
+    margin-left: 40%;
+    margin-top: 10%;
+    width: 30%;
+    background-color: rgb(250, 211, 224);
+    border-radius: 5%;
+    font-size: 1vw;
 }
 
-.left a{
-    font-size: 30px;
-    color: black;
-    
-}
-/*context*/
 .middle{
-    display: inline-flexbox;
-    padding-top: 100px;
-    height: 1000px;
+    position: absolute;
+    left: 30%;
+    font-size: 1.5vw;
 }
+
 .middle div{
-    background-color: white;
-    width: 45vw;
-    font-size: 2vw;
-    margin: 1vw auto;
-    padding: 2vw;
-    box-shadow: 0 0 10px 1px gainsboro;
-    border-radius: 2vw;
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    box-shadow: 5px 5px 2px 2px gray;
 }
-.middle h2{
+h2{
     margin-bottom: 0;
-    margin-top: 0;
 }
 .duration{
+    margin-top: 2%;
+    margin-left: 2%;
     display: inline-block;
-    text-align: left;
-    margin-bottom: 0;
-    font-size: 2vw;
 }
+
 .title{
-    display: block;
-    text-align: left;
-    float: right;
-    margin-bottom: 0;
-    font-size: 2vw;
+    margin-left: 5%;
+    display: inline-block;
+    margin-top: 2%;
+}
+#edu .text{
+    margin-left: 23%;
+}
+#edu :nth-last-child(1){
+    margin-bottom: 1%;
 }
 
 .text{
-    display: block;
-    text-align: justify;
-    margin-top: 10px;
-    padding: 0;
-    font-size: 1.5vw;
+    margin-left:5% ;
+    margin-top: 1%;
+    margin-right: 3%;
+    margin-bottom: 1%;
 }
-
-#club li{
+#club ul li{
+    margin-left:5% ;
+    margin-top: 1%;
+    margin-right: 3%;
+    margin-bottom: 1%;
     list-style: disc;
-    font-size: 1.5vw;
+}
+#skill ul li{
+    margin-left:5% ;
+    margin-top: 1%;
+    margin-right: 3%;
+    margin-bottom: 1%;
+    list-style: disc;
 }
 
+#skill :nth-last-child(1){
+    margin-bottom: 1%;
+}
 

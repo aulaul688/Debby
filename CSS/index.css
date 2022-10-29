@@ -1,55 +1,67 @@
 body{
-    background-color: rgb(245, 245, 210);
-    margin-left: 0;
+    margin: 0;
+    padding: 0;
 }
+
 .block{
     display: flex;
-    background-color: aliceblue;
-    width: 1300px;
+    position: relative;
+    width: 80%;
     height: 500px;
-    margin-top: 125px;
-    margin-left: 100px;
-    box-shadow: 0 0 20px 5px rgb(159, 170, 130);/*直 橫 模糊度 擴散度 顏色*/
+    margin-top: 7%;
+    left: 10%;
+    background-color: rgb(255, 255, 225);
+    box-shadow: 5px 5px 10px 5px gray;
 }
-
 .block img{
-    display: block;
-    float: left;
-    height: 300px;
-    margin-top: 50px;
-    margin-left: 50px;
-    box-shadow: 10px 10px 20px 2px gray;/*直 橫 模糊度 擴散度 顏色*/
-    border-radius: 20px 20px 20px 20px;/*左上 右上 右下 左下*/
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 20%;
+    border-radius:5% 5% ;
 }
 
-.block h1{
-        display: inline;
-        font-size: 100px;
-        margin-left: 100px;
-        margin-top: 50px;
+.block :nth-child(2){
+    position: absolute;
+    top: 4%;
+    left: 35%;
+    font-size: 5vw;
 }
-button{
-    display: inline;
-    margin: 15px;
-    padding: 10px;
-    height: 100px;
-    background-color: rgb(250, 216, 155);
+.block :nth-child(3){
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+.block button{
+    position: absolute;
+    width: 15%;
+    height: 10%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    bottom: 5%;
+    left: 40%;
     border: 0;
-    border-radius: 50px;
-    font-size: 50px;
-    color: rgb(70, 57, 12);
+    border-radius: 5%;
+    box-shadow: 2px 2px 1px 1px gray;
 }
-button:hover{
-    background-color: rgb(251, 251, 155);
+.block button:hover{
+    background-color: black;
+    color: white;
 }
-#pro{
-    margin-left: 150px;
-    margin-top: 200px;
+.block button:hover>a{
+    color: white;
 }
-a{
+
+.block a{
+    padding: 10%;
     text-decoration: none;
-    padding: 20px;
+    font-size: 2vw;
 }
-a:visited{
-    color: rgb(70, 57, 12);
+.block a:visited{
+    color: black;
 }
+
+.block :nth-child(5){
+    left: 60%;
+}
+

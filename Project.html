@@ -4,6 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--變成響應式網頁-->
   <link rel="stylesheet" href="CSS/navbar.css"/>
+  <link rel="stylesheet" href="CSS/footer.css"/>
   <link rel="stylesheet" href="CSS/pro.css"/>
   <title>Debby's Project</title>
 </head>
@@ -13,41 +14,100 @@
             <li><a href="Project.html" target="_self">Project</a></li>
             <li><a href="Resume.html" target="_self">Resume</a>
                 <ul class="subnav">
-                    <li><a href="Resume.html">學歷</a></li>
-                    <li><a href="Resume.html">助教</a></li>
+                    <li><a href="Resume.html#edu">學歷</a></li>
+                    <li><a href="Resume.html#ta">助教</a></li>
                     <li><a href="Resume.html#skill">其他技能</a></li>
-                    <li><a href="Resume.html">社團</a></li>
+                    <li><a href="Resume.html#club">社團</a></li>
                 </ul>
             </li>
-            <li><a href="Travel.html" target="_self">Travel</a></li>
-            <li><a href="contact.html" target="_self">Contact</a></li>
         </ul>
+        <div class="white">111</div>
     <div class="middle">
+        <div class="page" style="display: flex;">
             <div class="pro" >
-                <a href="index.html"> 
+                <a href="javascript:;"> 
                 <h2>五官種類辨識網站Beauty&Best</h2>
                 <br>
-                <p>利用MediaPipe FaceMesh實現五官種類辨識</p>
+                <p>利用MediaPipe FaceMesh實現五官種類辨識，幫助使用者找到符合自身五官的妝容。</p>
             </a>
+            </div>
+            <div class="pro pro2">
+                <a href="javascript:;"> 
+                    <h2>文字編輯器Text Editor By JAVA</h2>
+                    <br>
+                    <p>利用JAVA撰寫文字編輯器並套用16個Design Pattern。</p>    
+                </a>
+            </div>
+            <div class="pro pro2">
+                <a href="javascript:;"> 
+                    <h2>監測違規停車系統分析</h2>
+                    <br>
+                    <p>如有未註冊(陌生)車輛停在指定區域(私有停車格)，便通知使用者且協助拍照檢舉。</p>    
+                </a>
+            </div>
         </div>
-        <div class="pro">
-            <a href="index.html"> 
-                <h2>文字編輯器Text Editor By JAVA</h2>
-                <br>
-                <p>利用JAVA撰寫文字編輯器並套用16個Design Pattern</p>    
-            </a>
-
+    
+        <div class="pro_btn" >
+            <button class="probtn">五官種類辨識網站</button>
+            <button class="probtn">文字編輯器</button>
+            <button class="probtn">監測違規停車系統</button>
+        </div>
+        <div>
+            <div class="page2" >
+                <h1>五官種類辨識網站Beauty&Best(畢業專題)</h1>
+                <div class="content">
+                    <h2>專案介紹</h2>
+                    <p class="intro">　　透過MediaPipe Facemesh獲取臉部468特徵點後，利用各特徵點的距離、
+                        比例等，辨識使用者的五官類型，讓使用者可依據自己的五官類型學習適合自己的妝容畫法。我們共可辨識出7種臉型、6種眼型、長/短/窄/寬鼻、及6種唇型。</p>
+                    <h2>負責項目</h2>
+                    <p class="respond">獨自負責了所有程式撰寫(前端+後端)</p>
+                    <h2>使用語言/工具</h2>
+                    <p class="tool">JavaScript、jQuery、HTML、CSS、Mediapipe</p>
+                    <h2>專案連結</h2>
+                    <p><a href="https://aulaul688.github.io/index.html">網站頁面</a></p>
+                    <p><a href="">GitHub連結</a></p>
+                </div>
+                
+            </div>
+            <div class="page2" >
+                <h1>文字編輯器</h1>
+                <div class="content">
+                    <h2>專案介紹</h2>
+                    <p class="intro">　　以Java從0開始編寫一個文字編輯器，套用了16個設計模式並進行各種系統分析與測試。</p>
+                    <h2>負責項目</h2>
+                    <p class="respond">擔任組長，負責了3個設計模式及2個功能，及所有文件的修訂及最終審核。</p>
+                    <h2>使用語言/工具</h2>
+                    <p class="tool">Java、Java Swinge</p>
+                    <h2>專案連結</h2>
+                    <p><a href="https://github.com/aulaul688/text-editor">GitHub連結</a></p>
+                </div> 
+            </div>
+            <div class="page2" >
+                <h1>監測違規停車系統（系統分析）</h1>
+                <div class="content">
+                    <h2>專案介紹</h2>
+                    <p class="intro">　　當有車輛停進指定區域(私有停車格)時，攝影機會開始車牌辨識，如果為未註冊車牌(代表為陌生車輛)，便會通知使用者，使用者可選擇拍照檢舉或註冊該車牌。</p>
+                    <h2>負責項目</h2>
+                    <p class="respond">擔任組長，負責了Sequence Diagram、App程式撰寫及所有文件的修訂及最終審核。</p>
+                    <h2>使用語言/工具</h2>
+                    <p class="tool">Java、Android Studio</p>
+                    <h2>專案連結</h2>
+                    <p><a href="https://reurl.cc/QWpgzM">分析文件連結</a></p>
+                </div> 
+            </div>
         </div>
     </div>
+    
+    
     <div class="footer">
-        <div id="c"><p><br>© 2023 by Debby</p></div>
-         <div id="contact">
-            <p>Call<br><br>0985567610</p>
-            <p>Follow<br><a href="https://www.facebook.com/aulaul577"><img src="pic/fb.png"/></a>
-            <a href="https://www.instagram.com/aulaul54/"><img src="pic/ig.png"/></p></a>
-            <p>E-mail<br><br><a href="mailto:aulaul688@gmail.com">aulaul688@gmail.com</a></p>
+        <p>© 2023 by Debby</p>
+        <p>Call<br><br>0985567610</p>
+        <p>Follow<br><a href="https://www.facebook.com/aulaul577"><img src="pic/fb.png"/></a>
+        <a href="https://www.instagram.com/aulaul54/"><img src="pic/ig.png"/></p></a>
+        <p>E-mail<br><br><a href="mailto:aulaul688@gmail.com">aulaul688@gmail.com</a></p>
         </div>
     </div>
-
 </body>
 </html>
+<script src="js/jquery.mis.js"></script>
+<script src="js/pro.js"></script>
