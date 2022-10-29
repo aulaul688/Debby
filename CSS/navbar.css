@@ -1,6 +1,7 @@
-body{
+html,body{
     margin: 0;
-    
+    padding: 0;
+    height: 100%;
 }
 a{
     text-decoration: none;
@@ -54,6 +55,7 @@ li{
     display: none;
     margin-top: 8px;
     overflow: hidden;
+    background-color: rgb(252, 231, 231);
     box-shadow: 3px 3px 2px 2px gray;;
 }
 

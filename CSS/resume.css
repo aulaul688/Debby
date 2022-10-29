@@ -1,12 +1,15 @@
 .main{
     position: relative;
     width: 100%;
-    height: 83%;
-    margin-top: 7%;
+    height: 100%;
+    margin-top: 5%;
+    margin-bottom: -100px;
 }
 h2{
     margin-left: 2%;
-    font-size: 2vw;
+    font-size: 5vmin;
+    margin-bottom: 0;
+    margin-top: 2%;
 }
 .left{
     position: fixed;
@@ -18,13 +21,13 @@ h2{
     width: 30%;
     background-color: rgb(250, 211, 224);
     border-radius: 5%;
-    font-size: 1vw;
+    font-size: 100%;
 }
 
 .middle{
     position: absolute;
     left: 30%;
-    font-size: 1.5vw;
+    font-size: 3vmin;
 }
 
 .middle div{
@@ -34,9 +37,7 @@ h2{
     margin-bottom: 5%;
     box-shadow: 5px 5px 2px 2px gray;
 }
-h2{
-    margin-bottom: 0;
-}
+
 .duration{
     margin-top: 2%;
     margin-left: 2%;
