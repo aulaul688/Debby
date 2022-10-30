@@ -21,17 +21,33 @@ body{
     border-radius:5% 5% ;
 }
 
-.block :nth-child(2){
+.block h1{
     position: absolute;
-    top: 4%;
+    top: 2%;
     left: 35%;
     font-size: 5vw;
 }
-.block :nth-child(3){
+.block p{
     position: absolute;
-    top: 40%;
-    left: 35%;
+    top: 30%;
+    left: 38%;
+    right: 13%;
 }
+
+.pp :nth-child(2){
+    top: 35%;
+}
+.pp :nth-child(3){
+    top: 45%;
+}
+.pp :nth-child(4){
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    font-size: 2vw;
+}
+
+
 .block button{
     position: absolute;
     width: 15%;
@@ -65,3 +81,7 @@ body{
     left: 60%;
 }
 
+.pp :nth-child(5){
+    top: 70%;
+    left: 38%;
+}
