@@ -2,27 +2,46 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title>Debby陳葦柔</title>
-        <link rel="stylesheet" href="CSS/navbar.css"/>
-        <link rel="stylesheet" href="CSS/footer.css"/>
+        <link rel="stylesheet" href="CSS/bootstrap.min.css"/>
         <link rel="stylesheet" href="CSS/index.css"/>
-        
     </head>
     <body>
-        <div class="block" >
-            <img src="pic/m.jpg">
-            <h1>HI! I'm Debby</h1>
-        <div class="pp">
-            <p>我是就讀國立雲林科技大學 資訊管理系四年級的陳葦柔。
-            <br>目標職位是前端工程師，在修習基礎網頁課程後開始接觸前端，
-                對於撰寫程式碼將資料變成可視化前端頁面很有興趣，便自學了HTML、CSS、JavaScript 及React。
-            <br>大學期間透過獨自撰寫網頁及擔任助教、系學會會長培養了以下能力
-            <br><b>程式邏輯 領導 協作 快速查找答案 解決問題</b>
-            <br>點擊下方按鈕可查看更詳細的專案介紹及履歷</p>
+    <div class="container ">
+    <div class="main d-flex  justify-content-center align-items-center">
+        <!--水平卡片-->
+        <div class="card w-75 h-75 mx-auto ">
+            <div class="row g-0">
+                <div class="col-3 ms-5 mt-5">
+                    <img src="pic/m.jpg" class="w-100 rounded-2 mb-5">
+                    <div class="d-flex justify-content-center align-items-center mb-5">
+                        <a href="mailto:aulaul688@gmail.com" class="me-3 w-25"><img src="pic/mail.png" class="w-100"></a>
+                        <a href="https://github.com/aulaul688" class="ms-3 w-25"><img src="pic/github.png" class="w-100 "></a>
+                    </div>
+                    
+                </div>
+                <div class="col-7">
+                    <div class="card-body">
+                        <h1 class="card-title mt-5 ms-3 "><b>HI! I'm Debby</b></h5>
+                        <p class="card-text mt-3 ms-3">我是就讀國立雲林科技大學 資訊管理系四年級的陳葦柔。
+                            目標職位是前端工程師，在修習基礎網頁課程後開始接觸前端，
+                            對於撰寫程式碼將資料變成可視化前端頁面很有興趣，
+                            便自學了HTML、CSS、JavaScript 及React。
+                            大學期間透過獨自撰寫網頁及擔任助教、系學會會長培養了以下能力<br>
+                            <p class="card-text mt-3 ms-3 mb-4"><b>程式邏輯 領導 協作 自我學習 解決問題</b></p>
+                        </p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button class="mx-auto rounded-2"><a href="Project.html" class="p-auto">Project</a></button>
+                            <button class="mx-auto rounded-2"><a href="Resume.html">Resume</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-            <button><a href="Project.html">Project</a></button>
-            <button><a href="Resume.html">Resume</a></button>
-        </div>
+    </div>    
+    </div>
+       
     </body>
 </html>
 <script type="text/babel" src="JS/index.js"></script>

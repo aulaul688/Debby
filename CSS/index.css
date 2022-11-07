@@ -1,70 +1,30 @@
-body{
-    margin: 0;
-    padding: 0;
+.main{
+    height: 100vh;
+}
+.card{
+    background-color: #FFF9E7;
+    border: 0;
+    box-shadow: 2px 2px 2px 2px gray;
 }
 
-.block{
-    display: flex;
-    position: relative;
-    width: 80%;
-    height: 500px;
-    margin-top: 7%;
-    left: 10%;
-    background-color: rgb(255, 255, 225);
-    box-shadow: 5px 5px 10px 5px gray;
+.card-title{
+    font-size: 4vw;
 }
-.block img{
-    position: absolute;
-    top: 15%;
-    left: 5%;
-    width: 25%;
-    border-radius:5% 5% ;
-}
-
-.block h1{
-    position: absolute;
-    top: 2%;
-    left: 35%;
-    font-size: 5vw;
-}
-.block p{
-    position: absolute;
-    top: 30%;
-    left: 38%;
-    right: 4%;
+.card-text{
     font-size: 1.5vw;
 }
-
-.block button{
-    position: absolute;
-    width: 15%;
-    height: 10%;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    bottom: 5%;
-    left: 40%;
-    border: 0;
-    border-radius: 5%;
-    box-shadow: 2px 2px 1px 1px gray;
-}
-.block button:hover{
-    background-color: black;
-    color: white;
-}
-.block button:hover>a{
-    color: white;
-}
-
-.block a{
-    padding: 10%;
+.card a{
     text-decoration: none;
     font-size: 2vw;
-}
-.block a:visited{
     color: black;
 }
 
-.block :nth-child(5){
-    left: 60%;
+button{
+    background-color: white;
 }
-
+button:hover{
+    background-color: black;
+}
+button:hover>a{
+    color: white;
+}
