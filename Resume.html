@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="CSS/bootstrap.min.css"/>
         <link rel="stylesheet" href="CSS/navbar.css"/>
         <link rel="stylesheet" href="CSS/resume.css"/>
         <link rel="stylesheet" href="CSS/footer.css"/>
@@ -9,81 +10,127 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--變成響應式網頁-->
     </head>
     <body>
-        <div class="nav" id="top">
-            <ul class="navbar" >
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="Resume.html">Resume</a>
-                        <ul class="subnav">
-                            <li><a href="Resume.html#edu">學歷</a></li>
-                            <li><a href="Resume.html#ta">助教</a></li>
-                            <li><a href="Resume.html#skill">其他技能</a></li>
-                            <li><a href="Resume.html#club">社團</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="Project.html">Project</a></li>
-                </ul>
-        </div>
-        <div class="main">
-                <div class="left">
-                    <button><a href="#edu">學<br>歷</a></button>
-                    <button><a href="#ta">助<br>教</a></button>
-                    <button><a href="#skill">技<br>能</a></button>
-                    <button><a href="#club">社<br>團</a></button>
-                    <button><a href="#top">top</a></button>
+    <div class="nav container-fluid">
+            <nav class="navbar navbar-expand fixed-top navbar-light ">
+                <div class="collapse navbar-collapse justify-content-end md-5">
+                    <ul class="navbar-nav mb-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link" aria-current="page">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="Resume.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resume
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item rounded-0" href="Resume.html#edu">學歷</a></li>
+                            <li><a class="dropdown-item rounded-0" href="Resume.html#ta">助教</a></li>
+                            <li><a class="dropdown-item rounded-0" href="Resume.html#skill">技能</a></li>
+                            <li><a class="dropdown-item rounded-0" href="Resume.html#clud">社團</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Project.html" class="nav-link ">Project</a>
+                        </li>
+                    </ul>
                 </div>
-                    <div class="middle">
-                        <div id="edu">
-                            <h2>學歷</h2>
-                            <p class="duration">2019/9-2023/6</p>
-                            <p class="title"><b>國立雲林科技大學 資訊管理系</b></p>
-                            <p class="text">主修：JavaScript、Java、網頁設計、系統分析與設計、物件導向軟體工程</p>
-                            <p class="duration">2016/9-2019/6</p>
-                            <p class="title"><b>國立台中家商 應用外語科(商管組)</b></p>    
-                        </div>
-                        <div id="ta">
-                            <h2>助教</h2>
-                            <p class="duration">2022/2-2022/6</p>
-                            <p class="title"><b>系統分析與設計</b></p>
-                            <p class="text"> 　　此課程為全英教學必修課，平均及格率僅有66%，由於當時修習成績優良，受老師委託擔任助教，除了日常的行政事務與安排外，我也會在晚上開設全班中文輔導班幫助同學更了解課程內容。此經歷使我的系統分析能力及溝通表達能力有極大的提升。</p>
-                            <p class="duration">2022/9-2023/1</p>
-                            <p class="title"><b>物件導向軟體工程</b></p>
-                            <p class="text"> 　　此課程為全英教學必修課，平均及格率僅有46%，除了日常的行政事務與安排外，我會拍攝基礎教學影片，讓同學能在課後複習，也會修改學生作業並檢討，此經歷使我更加熟悉Java及物件導向程式語言，在基礎的Code Reviewed及溝通表達能力也有所成長。</p>
-                            <p class="duration">2020/9-2023/1</p>
-                            <p class="title"><b>管理學</b></p>
-                            <p class="text">　　此為必修課，學生們每週都需上台報告提案書、企劃書等，我們助教則擔任顧問提供同學意見與方向，此經驗讓我協作能力、管理能力及文件撰寫能力大幅提升。</p>
-                        </div>
-                        <div id="skill">
-                            <h2>技能</h2>
-                            <p class="text">
-                                <ul>
-                                    <li>英文:多益700分</li>
-                                    <li>Frontend:HTML5,CSS3</li>
-                                    <li>Programming Language:JavaScript,Java</li>
-                                    <li>Framework:React</li>
-                                </ul>
-                            </p>
-                        </div>
-                        <div id="club">
-                            <h2>社團</h2>
-                            <p class="duration">2020/7-2021/8</p>
-                            <p class="title"><b>資訊管理系 系學會會長</b></p>
-                            <p class="text">
-                                <ul>
-                                    <li>一年內帶領11位幹部為院上及系上辦理多達15場活動，且每場活動滿意度皆達95%以上。其中我擔任了系上新生歡迎營隊、暑期招生營隊、快閃活動的總召集人，以及院歌唱比賽的副召集人。</li>
-                                    <li>獲得當年度社團評鑑優等。</li>
-                                    <li>這年我們面對了許多重大問題例如疫情，我們必須想出不受疫情限制的創新活動辦法，這使我的領導能力、協作能力、學習能力及應變能力在這年大幅提升。</li>
-                                </ul>
-                            </p>
+            </nav>
+    </div>
+    <div class="main container">
+            <div class="row">
+                <div class="left col-3">
+                    <a href="Resume.html#edu"><button class="btn">學<br>歷</button></a>
+                    <a href="#ta"><button class="btn">助<br>教</button></a>
+                    <a href="#skill"><button class="btn">技<br>能</button></a>
+                    <a href="#club"><button class="btn">社<br>團</button></a>
+                    <a href="#top"><button class="btn">top</button></a>
+                </div>
+                <div class="middle col-7">
+                    <div class="card text-center mb-5">
+                        <h2 class="card-title" id="#edu">學歷</h2>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between">
+                                <p ><B>國立雲林科技大學 資訊管理系</B></p><p >2019/9~2023/6</p>
+                            </div>
+                            <p class="card-text text-start mb-4">主修：JavaScript、Java、網頁設計、系統分析與設計、物件導向軟體工程</p>
+                            <div class="card-text d-flex justify-content-between">
+                                <p ><B>國立台中家商 應用外語科(商管組)</B></p><p >2016/9-2019/6</p>
+                            </div>
                         </div>
                     </div>
+                    <div class="card text-center mb-5">
+                        <h2 class="card-title" id="#ta">助教經歷</h2>
+                        <div class="card-body ">
+                            <div class="card-text d-flex justify-content-between ">
+                                <p ><B>系統分析與設計</B></p><p >2022/2-2022/6</p>
+                            </div>
+                            <p class="card-text text-start mb-4">此課程為全英教學必修課，平均及格率僅有66%，由於當時修習成績優良，受老師委託擔任助教，除了日常的行政事務與安排外，我也會在晚上開設全班中文輔導班幫助同學更了解課程內容。此經歷使我的系統分析能力及溝通表達能力有極大的提升。</p>
+                            <div class="card-text d-flex justify-content-between ">
+                                <p ><B>物件導向軟體工程</B></p><p >2022/9-2023/1</p>
+                            </div>
+                            <p class="card-text text-start mb-4">　　此課程為全英教學必修課，平均及格率僅有46%，除了日常的行政事務與安排外，我會拍攝基礎教學影片，讓同學能在課後複習，也會修改學生作業並檢討，此經歷使我更加熟悉Java及物件導向程式語言，在基礎的Code Reviewed及溝通表達能力也有所成長。</p>
+                            <div class="card-text d-flex justify-content-between ">
+                                <p ><B>管理學</B></p><p >2020/9-2023/1</p>
+                            </div>
+                            <p class="card-text text-start">　　此為必修課，學生們每週都需上台報告提案書、企劃書等，我們助教則擔任顧問提供同學意見與方向，此經驗讓我協作能力、管理能力及文件撰寫能力大幅提升。</p>    
+                        </div>
+                    </div>
+                    <div class="card text-center mb-5">
+                        <h2 class="card-title" id="#skill">技能</h2>
+                        <div class="card-body text-start ms-3 ">
+                            <div class="card-text row">
+                                <p class="col-6"><B>英文</B></p>
+                                <p class="col-6 ">多益700分</p>
+                            </div>
+                            <div class="card-text row">
+                                <p class="col-6"><B>Front-end</B></p>
+                                <p class="col-6 flex-nowrap">熟悉HTML5,CSS3,bootstrap</p>
+                            </div>
+                            <div class="card-text row">
+                                <p class="col-6 flex-nowrap"><B>Programming Language</B></p>
+                                <p class="col-6">熟悉JavaScript,Java</p>
+                            </div>
+                            <div class="card-text row">
+                                <p class="col-6"><B>Database</B></p>
+                                <p class="col-6 ">熟悉MySql</p>
+                            </div>
+                            <div class="card-text row">
+                                <p class="col-6"><B>Framework</B></p>
+                                <p class="col-6 ">了解React</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-center mb-5">
+                        <h2 class="card-title" id="#club">社團經歷</h2>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between">
+                                <p ><B>資訊管理系 系學會會長</B></p><p >2020/7-2021/8</p>
+                            </div>
+                            <p class="card-text ">
+                                <ul>
+                                    <li class="text-start">一年內帶領11位幹部為院上及系上辦理多達15場活動，且每場活動滿意度皆達95%以上。其中我擔任了系上新生歡迎營隊、暑期招生營隊、快閃活動的總召集人，以及院歌唱比賽的副召集人。</li>
+                                    <li class="text-start">獲得當年度社團評鑑優等。</li>
+                                    <li class="text-start">這年我們面對了許多重大問題例如疫情，我們必須想出不受疫情限制的創新活動辦法，這使我的領導能力、協作能力、學習能力及應變能力在這年大幅提升。</li>
+                                </ul>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="footer row container-fluid">
+        <div class="col-3">
+            
         </div>
-        <div class="footer">
-            <p>© 2023 by Debby</p>
-            <p>Call<br><br>0985567610</p>
-            <p>Follow<br><a href="https://www.facebook.com/aulaul577" target="_blank"><img src="pic/fb.png"/></a>
-            <a href="https://github.com/aulaul688" target="_blank"><img src="pic/github.png"/></p></a>
-            <p>E-mail<br><br><a href="mailto:aulaul688@gmail.com">aulaul688@gmail.com</a></p>
+        <div class="col-3">
+            
         </div>
-        
+        <div class="col-3">
+            
+        </div>
+    </div>    
     </body>
+    <script src="JS/jquery.mis.js"></script>
+    <script src="JS/bootstrap.bundle.js"></script>
 </html>
